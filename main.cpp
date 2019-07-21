@@ -24,15 +24,15 @@ int main(){
         return -1;
     }
     
-    cout<<"Height of the image is: "<<image.rows()<<"\n";
-    cout<<"Width of the image is: "<<image.cols()<<"\n\n";
+    cout<<"Height of the image is: "<<image.rows<<"\n";
+    cout<<"Width of the image is: "<<image.cols<<"\n\n";
     
     int new_Height, new_Width;
     cout<<"Enter new Height: "; cin>>new_Height;
     cout<<"Enter new Width: "; cin>>new_Width;
     
     Mat output;
-    Shrink_Image( image, output, image.rows(), image.cols(), new_Height, new_Width );
+    Shrink_Image( image, output, image.rows, image.cols, new_Height, new_Width );
     
     string exit_directory;
     cout<<"Input the exit directory, where the new image is to be stored: ";
