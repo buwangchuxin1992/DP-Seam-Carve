@@ -2,9 +2,12 @@
 
 void GET_ENERGY( Mat& inp, Mat& out )
 {
+    Mat GRAY;
+    cvtColor( inp,GRAY,COLOR_BGR2GRAY );
+    
     Mat dx, dy;
-    Sobel( inp,dx,CV_64F,1,0 );
-    Sobel( inp,dy,CV_64F,0,1 );
+    Sobel( GRAY,dx,CV_64F,1,0 );
+    Sobel( GRAY,dy,CV_64F,0,1 );
     magnitude( dx,dy,out );
     
     double minV, maxV, Z;
