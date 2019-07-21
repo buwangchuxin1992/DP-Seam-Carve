@@ -1,4 +1,4 @@
-#include "seam_carve.hpp"
+#include "Seam_Carve.hpp"
 
 void seam_carve(Mat &op){
 	Mat eimage;
