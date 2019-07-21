@@ -7,7 +7,7 @@ void ERASE_SEAM( Mat& img, Mat& outp, vector<int>& path )
     {
         for(int j=0; j<Y-1; j++)
         {
-            outp.at<uchar>(i,j) = j<path[i] ? img.at<uchar>(i,j) : img.at<uchar>(i,j+1);
+            outp.at<Vec3b>(i,j) = j<path[i] ? img.at<Vec3b>(i,j) : img.at<Vec3b>(i,j+1);
         }
     }
 }
