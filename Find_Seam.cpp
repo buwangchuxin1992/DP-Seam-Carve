@@ -5,7 +5,7 @@
 
 void FIND_SEAM( Mat& eimage, vector<int>& path )
 {
-    int X = eimage.rows(), Y = eimage.cols();
+    int X = eimage.rows, Y = eimage.cols;
     int DP[X][Y];
     
     for(int i=0; i<Y; i++) DP[0][i] = (int) eimage.at<uchar>(0,i);
