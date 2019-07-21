@@ -1,4 +1,5 @@
 #include "Find_Seam.hpp"
+#include <algorithm>
 
 #define INF INT_MAX
 
@@ -41,4 +42,5 @@ void FIND_SEAM( Mat& eimage, vector<int>& path )
         
         j = id3;
     }
+    reverse( path.begin(),path.end() );
 }
