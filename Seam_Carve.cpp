@@ -1,4 +1,7 @@
 #include "Seam_Carve.hpp"
+#include "Energy_Val.hpp"
+#include "Find_Seam.hpp"
+#include "Remove_Seam.hpp"
 
 void seam_carve(Mat &op){
 	Mat eimage;
