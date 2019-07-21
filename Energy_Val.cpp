@@ -10,6 +10,6 @@ void GET_ENERGY( Mat& inp, Mat& out )
     double minV, maxV, Z;
     minMaxLoc( out, &minV, &maxV );
     Z = ( 1/maxV ) * 255;
-    out = out*z;
+    out = out*Z;
     out.convertTo( out,CV_8U );
 }
