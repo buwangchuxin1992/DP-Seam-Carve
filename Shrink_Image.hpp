@@ -1,4 +1,4 @@
-#indef Shrink_Image_H
+#ifndef Shrink_Image_H
 #define Shrink_Image_H
 
 #include<opencv2/opencv.hpp>
