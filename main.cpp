@@ -50,6 +50,8 @@ int main(){
     namedWindow("Seam-Carved Image", WINDOW_NORMAL);
     imshow("Seam-Carved Image",output);
     
+    waitKey(0);
+    
     cout<<"Successfully saved the image!\nHave a Great Day :)";
     return 0;
 }
