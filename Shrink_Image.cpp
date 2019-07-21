@@ -1,4 +1,5 @@
 #include "Shrink_Image.hpp"
+#include "Seam_Carve.hpp"
 
 void Shrink_Image(Mat &image, Mat &output, int old_h, int old_w, int new_h, int new_w){
 	output = image;
