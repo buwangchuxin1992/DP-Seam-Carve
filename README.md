@@ -6,3 +6,8 @@ Seam carving (or liquid rescaling) is an algorithm for content-aware image resiz
 ![Original Image](images/seam_carving.jpg)
 ### Seam Carved Image
 ![Seam Carved Image](images/seeam.jpg)
+
+### Original Image
+![Original Image](images/waterfall.png)
+### Seam Carved Image
+![Seam Carved Image](images/waterfalll.png)
