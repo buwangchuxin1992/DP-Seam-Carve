@@ -2,7 +2,7 @@
 #define Shrink_Image_H
 
 #include<opencv2/opencv.hpp>
-#include<isotream>
+#include<iostream>
 
 using namespace cv;
 using namespace std;
