@@ -2,6 +2,12 @@
 #include<iostream>
 #include<vector>
 
+#include "Shrink_Image.hpp"
+#include "Seam_Carve.hpp"
+#include "Energy_Val.hpp"
+#include "Find_Seam.hpp"
+#include "Remove_Seam.hpp"
+
 using namespace std;
 using namespace cv;
 
@@ -29,7 +35,7 @@ int main(){
     Shrink_Image( image, output, image.rows(), image.cols(), new_Height, new_Width );
     
     string exit_directory;
-    cout<<"Input the exit directory, where the new image is to stored: ";
+    cout<<"Input the exit directory, where the new image is to be stored: ";
     cin>>exit_directory;
     
     bool is_saved = imwrite(exit_directory,output); // write the address where you wanna store your image with its name, in the quotes, example: "C:/Documents/photo1.jpg"
