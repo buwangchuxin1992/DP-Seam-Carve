@@ -13,7 +13,8 @@ Seam carving (or liquid rescaling) is an algorithm for content-aware image resiz
 3. Open up a terminal and navigate to the directory where the above program is downloaded.
 
 4. In order to compile, enter the following command in the terminal
-    $ g++ -std=c++17 -o main main.cpp Energy_Val.cpp Find_Seam.cpp Remove_Seam.cpp Seam_Carve.cpp Shrink_Image.cpp $(pkg-config --cflags --libs opencv)
+
+`$ g++ -std=c++17 -o main main.cpp Energy_Val.cpp Find_Seam.cpp Remove_Seam.cpp Seam_Carve.cpp Shrink_Image.cpp $(pkg-config --cflags --libs opencv)`
 
 5. Once compiled succesfully, execute it using ./main
 
