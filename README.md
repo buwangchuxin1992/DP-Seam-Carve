@@ -2,6 +2,15 @@
 ### Seam Carving (Content Aware Image Resizing)
 Seam carving (or liquid rescaling) is an algorithm for content-aware image resizing, developed by Shai Avidan, of Mitsubishi Electric Research Laboratories (MERL), and Ariel Shamir, of the Interdisciplinary Center and MERL. It functions by establishing a number of seams (paths of least importance) in an image and automatically removes seams to reduce image size or inserts seams to extend it. Seam carving also allows manually defining areas in which pixels may not be modified, and features the ability to remove whole objects from photographs.
 
+### Original Image
+![Original Image](images/seam_carving.jpg)
+### Plain Re-scaled Image
+Notice the fact that our main objects are distorted greatly.
+![Re-scaled Image](images/rescale.jpg)
+### Seam Carved Image
+Notice the fact that our main objects are not distorted at all, but the unimportant part of the image is removed instead.
+![Seam Carved Image](images/seeam.jpg)
+
 # Compiling and Executing the Program
 
 1. In order to run the file, make sure your system is installed with the latest version of openCV.
@@ -23,9 +32,3 @@ Seam carving (or liquid rescaling) is an algorithm for content-aware image resiz
 6. Enter the path of the image which you want to resize.
 
 7. Then enter it's new height and width which you desire, and the new location.
-
-
-### Original Image
-![Original Image](images/seam_carving.jpg)
-### Seam Carved Image
-![Seam Carved Image](images/seeam.jpg)
